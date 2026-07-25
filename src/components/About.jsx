@@ -4,7 +4,7 @@ import profileImage from '../assets/about/image.png';
 const About = () => {
   const quickInfo = [
     { label: 'B.Tech (Current)', value: 'AI & Data Science (Final Year)' },
-    { label: 'GenAI Intern', value: 'Trigent Software' },
+    { label: 'Internship', value: 'Accent Technosoft' },
     { label: 'Location', value: 'Tamil Nadu, India' },
     { label: 'Role', value: 'AI Software Engineer' }
   ];
@@ -37,7 +37,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="bg-[#ff2a2a] pt-28 pb-32 px-6 md:px-12 w-full relative overflow-hidden font-sans">
+    <section id="about" className="bg-gold-glitter pt-28 pb-32 px-6 md:px-12 w-full relative overflow-hidden font-sans">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-16 items-start mb-20">
 
@@ -73,13 +73,13 @@ const About = () => {
               About Me
             </div>
             <h2 className="text-4xl md:text-5xl font-black text-black mb-6 leading-tight">
-              Sankaraguru
+              Madhumitha
             </h2>
-            <p className="text-lg md:text-xl font-bold mb-8 leading-relaxed text-red-50">
+            <p className="text-lg md:text-xl font-bold mb-8 leading-relaxed text-amber-50">
               I am an AI Software Engineer and final-year Artificial Intelligence & Data Science student passionate about building intelligent, scalable, and user-centric software.
             </p>
-            <p className="text-base font-semibold mb-12 leading-relaxed text-red-100 opacity-90">
-              My expertise spans Generative AI, Full Stack Development, Workflow Automation, and Machine Learning. During my internship at Trigent Software, I developed AI-powered solutions, automated workflows, and built production-ready applications using modern technologies. I enjoy transforming complex problems into practical AI solutions that improve productivity and user experience.
+            <p className="text-base font-semibold mb-12 leading-relaxed text-amber-100 opacity-90">
+              My expertise spans Python Programming, Machine Learning, Workflow Automation, and Full Stack Development. During my internship at Accent Technosoft, I gained experience with data processing, visualization, predictive analytics, and Python-based machine learning models. I enjoy transforming complex problems into practical software solutions that improve productivity and user experience.
             </p>
 
             {/* Quick Info Grid */}
@@ -88,7 +88,7 @@ const About = () => {
                 <div key={idx} className="flex items-center gap-4">
                   <span className="text-3xl">{info.icon}</span>
                   <div>
-                    <h4 className="text-xs uppercase font-mono tracking-widest text-red-200">{info.label}</h4>
+                    <h4 className="text-xs uppercase font-mono tracking-widest text-amber-200">{info.label}</h4>
                     <p className="text-sm font-bold text-white mt-0.5">{info.value}</p>
                   </div>
                 </div>
@@ -114,16 +114,16 @@ const About = () => {
                 key={groupIdx}
                 data-aos="fade-up"
                 data-aos-delay={groupIdx * 100}
-                className="bg-gray-900/90 rounded-2xl p-6 shadow-xl border border-white/10 hover:border-[#ff2a2a] transition-all duration-300 group"
+                className="bg-gray-900/90 rounded-2xl p-6 shadow-xl border border-white/10 hover:border-[#e5c060] transition-all duration-300 group"
               >
-                <h4 className="text-lg font-black text-white mb-4 border-b border-white/10 pb-2 group-hover:text-red-400 transition-colors duration-300">
+                <h4 className="text-lg font-black text-white mb-4 border-b border-white/10 pb-2 group-hover:text-[#e5c060] transition-colors duration-300">
                   {group.category}
                 </h4>
                 <div className="flex flex-wrap gap-2">
                   {group.skills.map((skill, skillIdx) => (
                     <span
                       key={skillIdx}
-                      className="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-white text-xs font-semibold hover:bg-[#ff2a2a] hover:border-transparent transition-all duration-200 cursor-default"
+                      className="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-white text-xs font-semibold hover:bg-gold-glitter hover:border-transparent transition-all duration-200 cursor-default"
                     >
                       {skill}
                     </span>

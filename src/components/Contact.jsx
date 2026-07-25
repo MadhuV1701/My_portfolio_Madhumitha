@@ -30,18 +30,18 @@ const Contact = () => {
       <div className="relative z-10 w-full flex justify-end items-end">
         <div
           data-aos="fade-up"
-          className="bg-[#ff2a2a] w-full md:w-[85%] lg:w-[75%] p-8 md:p-16 text-white flex flex-col justify-between"
+          className="bg-gold-glitter w-full md:w-[85%] lg:w-[75%] p-8 md:p-16 text-white flex flex-col justify-between"
         >
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-white/20 pb-8 mb-12 gap-6">
             <div className="text-xs font-bold tracking-[0.2em] uppercase opacity-90">
               Reach Out
             </div>
             <div className="flex flex-wrap gap-x-8 gap-y-4 text-xs font-semibold text-white/80">
-              <span className="flex items-center gap-2">📧 <a href="mailto:sankaraguruv36@gmail.com" className="hover:text-white underline">sankaraguruv36@gmail.com</a></span>
-              <span className="flex items-center gap-2">📱 <a href="tel:+918072413070" className="hover:text-white underline">+91 80724 13070</a></span>
+              <span className="flex items-center gap-2">📧 <a href="mailto:madhumitha17012006@gmail.com" className="hover:text-white underline">madhumitha17012006@gmail.com</a></span>
+              <span className="flex items-center gap-2">📱 <a href="tel:+917845248914" className="hover:text-white underline">+91 7845248914</a></span>
               <span className="flex items-center gap-2">📍 Tamil Nadu, India</span>
-              <span className="flex items-center gap-2">🐱 <a href="https://github.com/sankaraguru0107" target="_blank" rel="noopener noreferrer" className="hover:text-white underline">GitHub</a></span>
-              <span className="flex items-center gap-2">💼 <a href="https://www.linkedin.com/in/sankaraguru-v-9a5891307/" target="_blank" rel="noopener noreferrer" className="hover:text-white underline">LinkedIn</a></span>
+              <span className="flex items-center gap-2">🐱 <a href="https://github.com/MadhuV1701" target="_blank" rel="noopener noreferrer" className="hover:text-white underline">GitHub</a></span>
+              <span className="flex items-center gap-2">💼 <a href="https://www.linkedin.com/in/madhumitha-v-66a129358/" target="_blank" rel="noopener noreferrer" className="hover:text-white underline">LinkedIn</a></span>
             </div>
           </div>
 
@@ -110,7 +110,7 @@ const Contact = () => {
 
                   <button
                     type="submit"
-                    className="px-8 py-3 rounded-full border border-white/40 text-white font-bold flex items-center justify-center gap-3 hover:bg-white hover:text-[#ff2a2a] transition-all duration-300 group whitespace-nowrap self-start sm:self-auto"
+                    className="px-8 py-3 rounded-full border border-white/40 text-white font-bold flex items-center justify-center gap-3 hover:bg-white hover:text-[#b38728] transition-all duration-300 group whitespace-nowrap self-start sm:self-auto"
                   >
                     Send
                     <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">

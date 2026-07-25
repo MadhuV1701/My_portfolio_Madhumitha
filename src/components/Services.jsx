@@ -31,7 +31,7 @@ const TagCard = ({ number, title, text, listItems, className, aosDelay, aosType,
       data-aos={aosType || "fade-up"} 
       data-aos-delay={aosDelay}
       className={`w-80 sm:w-[360px] rounded-[2rem] p-2 relative flex flex-col items-center hover:scale-[1.02] transition-all duration-700 z-10 ${className} ${
-        isActive ? 'bg-[#ff2a2a] border-red-400 shadow-[0_20px_50px_rgba(255,42,42,0.4)]' : 'bg-white border border-gray-200 shadow-[0_15px_40px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.12)]'
+        isActive ? 'bg-gold-glitter border-amber-300 shadow-[0_20px_50px_rgba(212,175,55,0.4)]' : 'bg-white border border-gray-200 shadow-[0_15px_40px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.12)]'
       }`}
     >
       {/* The hole punch */}
@@ -41,10 +41,10 @@ const TagCard = ({ number, title, text, listItems, className, aosDelay, aosType,
       
       {/* Inner container */}
       <div className={`w-full h-full rounded-[1.5rem] mt-8 p-8 flex flex-col min-h-[260px] transition-colors duration-700 ${
-        isActive ? 'bg-red-700/50' : 'bg-[#f4f4f4]'
+        isActive ? 'bg-amber-800/50' : 'bg-[#f4f4f4]'
       }`}>
         <span className={`text-xl font-bold mb-2 font-serif italic transition-colors duration-700 ${
-          isActive ? 'text-red-200' : 'text-gray-400'
+          isActive ? 'text-amber-200' : 'text-gray-400'
         }`}>{number}</span>
         
         <h3 className={`text-xl font-black mb-3 tracking-tight transition-colors duration-700 ${
@@ -52,14 +52,14 @@ const TagCard = ({ number, title, text, listItems, className, aosDelay, aosType,
         }`}>{title}</h3>
         
         <p className={`text-xs leading-relaxed font-semibold transition-colors duration-700 mb-4 ${
-          isActive ? 'text-red-100' : 'text-gray-500'
+          isActive ? 'text-amber-100' : 'text-gray-500'
         }`}>
           {text}
         </p>
 
         {listItems && (
           <ul className={`text-[10px] space-y-1.5 font-bold transition-colors duration-700 list-disc list-inside ${
-            isActive ? 'text-red-200' : 'text-gray-600'
+            isActive ? 'text-amber-200' : 'text-gray-600'
           }`}>
             {listItems.map((item, i) => (
               <li key={i}>{item}</li>
@@ -184,13 +184,12 @@ const Services = () => {
           
           <TagCard 
             number="01"
-            title="GenAI Intern @ Trigent Software"
-            text="Developed state-of-the-art AI-powered applications, integrated Large Language Models (LLMs), built robust workflow automation systems, and created Streamlit monitoring dashboards."
+            title="Accent Technosoft — June 2025"
+            text="Completed Python with Data Science training and worked on real-world datasets using Python. Gained practical experience in data preprocessing, model building, and evaluation using Pandas and Scikit-learn."
             listItems={[
-              "3 Months Duration",
-              "Healthcare AI use cases & clinical automation",
-              "Prompt engineering & AI model experimentation",
-              "API integration & workflow orchestration"
+              "Python & Data Science Intern",
+              "Real-world dataset operations",
+              "Model evaluation & analytics"
             ]}
             className="md:absolute md:top-[10px] md:right-[5%] lg:right-[10%] rotate-2 md:rotate-6"
             aosType="fade-left"
@@ -202,11 +201,11 @@ const Services = () => {
           <TagCard 
             number="02"
             title="B.Tech — AI & Data Science"
-            text="Final-year student pursuing a Bachelor of Technology in Artificial Intelligence & Data Science, focusing on advanced machine learning, neural networks, NLP, and cloud technologies."
+            text="Bachelor of Technology in Artificial Intelligence and Data Science at Dr. Mahalingam College of Engineering and Technology, Pollachi (2023-2027)."
             listItems={[
-              "Tamil Nadu, India",
-              "AI & Machine Learning core curriculum",
-              "Hands-on full stack project development"
+              "Current CGPA: 7.45",
+              "AI & Machine Learning Core",
+              "Advanced analytics & cloud development"
             ]}
             className="md:absolute md:top-[450px] md:left-[5%] lg:left-[10%] -rotate-2 md:-rotate-6"
             aosType="fade-right"
@@ -217,8 +216,8 @@ const Services = () => {
 
           <TagCard 
             number="03"
-            title="Diploma — Mechanical Engineering"
-            text="Completed a Diploma in Mechanical Engineering, establishing a solid baseline in technical design, computational thinking, analytical reasoning, and core physics/math."
+            title="HSC — Pushpalatha Matric"
+            text="Completed Higher Secondary School Certificate (HSC) at Pushpalatha Matric Higher Secondary School, Tirunelveli (2022-2023) with a score of 62%."
             className="md:absolute md:top-[750px] md:right-[5%] lg:right-[15%] rotate-1 md:rotate-3"
             aosType="fade-left"
             aosDelay="300"
@@ -228,13 +227,8 @@ const Services = () => {
 
           <TagCard 
             number="04"
-            title="Achievements & Certifications"
-            text="Certified across major technology streams including Generative AI, Machine Learning, Python Programming, React Development, and AI Fundamentals."
-            listItems={[
-              "Built 10+ AI Projects",
-              "Developed AI Legal Assistant (Lexora)",
-              "Built Healthcare AI Automation Systems"
-            ]}
+            title="SSLC — Sri Jayendra Swamigal"
+            text="Completed Secondary School Leaving Certificate (SSLC) at Sri Jayendra Swamigal Silver Jubilee Matric Higher Secondary School, Tirunelveli (2020-2021)."
             className="md:absolute md:top-[1100px] md:left-[15%] lg:left-[25%] -rotate-1 md:-rotate-3"
             aosType="fade-right"
             aosDelay="400"

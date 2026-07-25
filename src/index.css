@@ -35,3 +35,41 @@ body {
   90% { transform: translateY(-15px); opacity: 1; }
   100% { transform: translateY(0); opacity: 1; }
 }
+
+@keyframes glitterShimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.bg-gold-glitter {
+  background: linear-gradient(
+    135deg,
+    #cda250 0%,
+    #fcf6ba 15%,
+    #b38728 30%,
+    #fbf5b7 45%,
+    #aa771c 60%,
+    #fcf6ba 75%,
+    #cda250 90%,
+    #b38728 100%
+  );
+  background-size: 300% 300%;
+  animation: glitterShimmer 5s ease infinite;
+}
+
+.text-gold-glitter {
+  background: linear-gradient(
+    135deg,
+    #cda250 0%,
+    #fcf6ba 25%,
+    #b38728 50%,
+    #fbf5b7 75%,
+    #aa771c 100%
+  );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: glitterShimmer 4s ease infinite;
+}

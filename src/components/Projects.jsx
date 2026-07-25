@@ -4,58 +4,39 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Lexora – AI Legal Assistant",
-      tagline: "Featured Project",
-      description: "AI-powered legal assistant featuring voice interaction, context-aware AI chat, legal document analysis, secure user authentication, and comprehensive case management.",
-      tech: ["React", "Node.js", "Supabase", "Gemini AI", "OpenAI"],
-      featured: true,
-
+      title: "AI Legal Chatbot",
+      tagline: "Legal AI Assistant",
+      description: "Developed an AI-powered Legal Voice & Chat Assistant using NLP and OpenAI, with a React frontend and Supabase backend for secure real-time interaction.",
+      tech: ["React", "NLP", "OpenAI", "Supabase"],
+      featured: false,
+      icon: "⚖️"
     },
     {
       id: 2,
-      title: "Healthcare AI Automation",
-      tagline: "Automation & Operations",
-      description: "Built multiple AI workflows for healthcare systems, including automated Hospital Bed Management, Clinical workflow automation, continuous Patient Monitoring, and automated Patient Follow-up scheduling.",
-      tech: ["Python", "n8n", "AI APIs", "Workflow Automation"],
-      featured: false,
-
-    },
-
-    {
-      id: 4,
-      title: "AI Rockfall Prediction",
+      title: "Rockfall Prediction",
       tagline: "Mining AI Safety",
-      description: "Predicts dangerous rockfalls in mining environments using advanced AI predictive models, helping improve workforce safety and mitigate operational risks.",
+      description: "Built a machine learning-based Rockfall Prediction System to analyze geological and sensor data, enabling early risk detection and automated safety alerts for mining and slope monitoring.",
       tech: ["Python", "Machine Learning", "Predictive Analytics"],
       featured: false,
-
+      icon: "⛰️"
     },
     {
-      id: 5,
-      title: "HabitFlow",
-      tagline: "Productivity App",
-      description: "An AI-based productivity and habit tracking application designed to analyze user behavior and generate personalized recommendations to build consistent routines.",
-      tech: ["React", "AI Integration", "Productivity Tech"],
+      id: 3,
+      title: "AI Voice-Based Medical Scheduling",
+      tagline: "Voice AI & Automation",
+      description: "Built a voice-enabled AI medical appointment scheduling system integrating VAPI, n8n, Google Calendar API, and Supabase for real-time availability checking and automated booking during live calls.",
+      tech: ["VAPI", "n8n", "Google Calendar API", "Supabase"],
       featured: false,
-
+      icon: "📞"
     },
     {
-      id: 6,
-      title: "Medical Report Summarizer",
-      tagline: "Generative AI",
-      description: "Summarizes lengthy and complex medical reports using Generative AI LLM models to provide patients and doctors with concise, readable summaries.",
-      tech: ["Generative AI", "LLMs", "NLP"],
-      featured: false,
-
-    },
-    {
-      id: 7,
-      title: "Sentiment Analysis",
-      tagline: "Natural Language Processing",
-      description: "Analyzes user reviews and feedback to identify sentiment trends using Hugging Face pre-trained transformers.",
-      tech: ["Hugging Face", "Transformers", "NLP"],
-      featured: false,
-
+      id: 4,
+      title: "Brain Tumor Detection",
+      tagline: "Featured Project",
+      description: "Developed an AI-powered Brain Tumor Detection and Classification System using Python, Deep Learning, U-Net, and Fuzzy Logic to enhance MRI image processing, achieve accurate tumor segmentation and classification, and presented the research at the IEEE-sponsored International Conference (ICSES 2026).",
+      tech: ["Python", "Deep Learning", "U-Net", "Fuzzy Logic"],
+      featured: true,
+      icon: "🧠"
     }
   ];
 
@@ -79,10 +60,10 @@ const Projects = () => {
           <div
             key={project.id}
             data-aos="fade-up"
-            className="mb-12 bg-gray-900 text-white rounded-3xl p-8 md:p-12 shadow-2xl border border-white/10 hover:border-[#ff2a2a] transition-all duration-500 flex flex-col lg:flex-row gap-8 items-center"
+            className="mb-12 bg-gray-900 text-white rounded-3xl p-8 md:p-12 shadow-2xl border border-white/10 hover:border-[#e5c060] transition-all duration-500 flex flex-col lg:flex-row gap-8 items-center"
           >
             <div className="flex-1">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#ff2a2a] text-white text-xs font-black uppercase tracking-wider mb-6">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-glitter text-white text-xs font-black uppercase tracking-wider mb-6">
                 <span>⭐</span> {project.tagline}
               </div>
               <h3 className="text-3xl md:text-4xl font-black mb-4 tracking-tight">
@@ -114,7 +95,7 @@ const Projects = () => {
               key={project.id}
               data-aos="fade-up"
               data-aos-delay={idx * 100}
-              className="bg-[#f4f4f4] rounded-2xl p-8 border border-gray-200 shadow-sm hover:shadow-xl hover:scale-[1.02] hover:border-[#ff2a2a] transition-all duration-300 flex flex-col justify-between"
+              className="bg-[#f4f4f4] rounded-2xl p-8 border border-gray-200 shadow-sm hover:shadow-xl hover:scale-[1.02] hover:border-[#e5c060] transition-all duration-300 flex flex-col justify-between"
             >
               <div>
                 <div className="flex justify-between items-start mb-6">
